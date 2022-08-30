@@ -1,6 +1,7 @@
 # API Reference
 
 Each NoVa includes a REST API. In this way, data sharing and data retrieval is done quickly.
+
 Request can be made in x-www-form-urlencoded and JSON formats.
 
 ## Listened Ports
