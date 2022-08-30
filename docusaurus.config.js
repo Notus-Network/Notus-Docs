@@ -12,13 +12,18 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/brand/Notus_icon_gradient_bg.svg",
+  favicon: "img/favicon.ico",
   organizationName: "notus-network",
   projectName: "notus-docs",
   trailingSlash: false,
   i18n: {
-    defaultLocale: "tr",
+    defaultLocale: "en",
     locales: ["tr", "en"],
+    localeConfigs: {
+      en: {
+        htmlLang: "en-GB",
+      },
+    },
   },
   presets: [
     [

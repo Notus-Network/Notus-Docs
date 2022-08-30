@@ -35,7 +35,7 @@ Blok oluşturma esnasında işlemlerin gruplandırılması süreci şu şekilde 
 
 Yukarıdaki koşullardan biri karşılandığı durumda blok havuzundan çekilen işlemler blok oluşturma sürecine alınır.
 
-![Blok Mimarisi](/img/whitepaper/blok_yapisi.jpg)
+![Blok Mimarisi](/img/whitepaper/tr/blok_yapisi.jpg)
 
 ## Nonce Hesaplaması
 
@@ -61,7 +61,7 @@ Kayar nonce hesaplaması için örneğin;
 
 Oluşturulacak blok için SHA-256 özet algoritmasının kullanıldığı senaryoda
 
-![Kayar Hesaplama](/img/whitepaper/kayar.jpg)
+![Kayar Hesaplama](/img/whitepaper/tr/kayar.jpg)
 
 Bulunan sayı
 
@@ -95,7 +95,7 @@ N = Ceil(α – β)
 
 β = Zorluk derecesi uzunluğu
 
-![Atlamali Hesaplama](/img/whitepaper/atlamalı.jpg)
+![Atlamali Hesaplama](/img/whitepaper/tr/atlamalı.jpg)
 
 Bulunan sayı
 
@@ -123,7 +123,7 @@ Sonuç listesi bir ayraç ile birleştirilecek. Ayraç olarak: # gibi bir değer
 
 Notus Mimarisinde kilit niteliğini taşıyan geliştirmelerden biri de madenci görev dağılımı yapısıdır. Ölçeklenme sorununa çözüm olarak ağın içerisinde yer alan madencilerin görev dağılım mimarisi tasarlanmıştır. Ölçeklenme sorunlarının temelinde bulunan ağ yoğunluğunu dağıtmanın en etkin yolu olarak işlem havuzlarının çoklanması ön görülmüştür.
 
-![Blok Node Mimarisi](/img/whitepaper/blok_node_mimarisi.jpg)
+![Blok Node Mimarisi](/img/whitepaper/tr/blok_node_mimarisi.jpg)
 
 Mimari 3 halka şeklinde tasarlanmış olup içten dışa doğru şu şekilde sıralanmaktadır:
 
@@ -153,7 +153,7 @@ Notus Network işlem doğrulayıcılarının verimli çalışmalarını sağlama
 
 Her düğüm, kendi cüzdan adresinin diğer düğümlerle paylaştığı gibi diğer düğümlerinde cüzdan adreslerini ister.
 
-![İşlem Protokolü](/img/whitepaper/işlem_protokolü.jpg)
+![İşlem Protokolü](/img/whitepaper/tr/işlem_protokolü.jpg)
 
 Cüzdan adreslerinin değişimi tamamlandığında:
 
