@@ -2,14 +2,14 @@
 title: /send
 ---
 
-**Request Tipi: POST**
+**Request Type: POST**
 
-Transfer işlemini Node'a gönderir.
+Transfers to the specified address.
 
-## Parametreler
+## Parameters
 
 - CryptoTransactionStruct
-  - Kripto işlemi yapılacak veri.
+  - Data to transfer.
     - ErrorNo
     - UnlockTime
     - Currency
@@ -46,7 +46,7 @@ Transfer işlemini Node'a gönderir.
 }
 ```
 
-## Response Gövdesi
+## Response
 
 ```json
 {

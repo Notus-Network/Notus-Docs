@@ -4,16 +4,16 @@ title: /transaction/status/{uuid}
 
 # /transaction/status/{uuid}
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-UUID değerinin verildiği işlem durumunu gösterir.
+Indicates the process state for which the UUID value is given.
 
-## Parametreler
+## Parameters
 
-- İşlem UUID
-  - 90 haneli bir uuid değeri.
+- Tx UUID
+  - A 90-character uuid value.
 
-## Response Gövdesi
+## Response
 
 ```json
 78

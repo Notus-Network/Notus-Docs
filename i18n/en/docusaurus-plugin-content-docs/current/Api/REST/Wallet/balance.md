@@ -4,16 +4,16 @@ title: /balance/{walletKey}
 
 # /balance/{walletKey}
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Cüzdan anahtarının verildiği cüzdanın bakiye bilgisini verir.
+Returns the balance information of the wallet to which the wallet key is given.
 
-## Parametreler
+## Parameters
 
 - Wallet Key
-  - 38 haneli bir cüzdan anahtarı.
+  - A 38-character wallet key.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

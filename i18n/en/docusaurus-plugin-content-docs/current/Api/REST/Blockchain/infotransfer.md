@@ -1,10 +1,10 @@
 # /info/transfer
 
-**Request Tipi: GET**
+**Request Type: GET**
 
 Şu anki işlemlerin ücret bilgisini verir.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

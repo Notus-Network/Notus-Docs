@@ -4,16 +4,16 @@ title: /block/status/{uuid}
 
 # /block/status/{uuid}
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-UUID değerinin verildiği bloğun durumunu gösterir.
+Indicates the state of the block for which the UUID value is given.
 
-## Parametreler
+## Parameters
 
 - Block UUID
-  - 90 haneli bir uuid değeri.
+  - A 90-character uuid value.
 
-## Response Gövdesi
+## Response
 
 ```json
 78

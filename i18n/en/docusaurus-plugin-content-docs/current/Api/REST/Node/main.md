@@ -1,10 +1,10 @@
 # /main
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Main tipinde Node'ların listesini gösterir.
+Shows the node list of main type.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

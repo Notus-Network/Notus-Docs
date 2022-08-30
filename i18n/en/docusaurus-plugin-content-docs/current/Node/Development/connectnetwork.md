@@ -1,4 +1,5 @@
 # Ağ'a Bağlanma
 
 :::note
-Şu anda bu dökümantasyon yapım aşamasındadır.
+Currently, this documentation is in the draft stage. It may contain word correct or incorrect information
+:::

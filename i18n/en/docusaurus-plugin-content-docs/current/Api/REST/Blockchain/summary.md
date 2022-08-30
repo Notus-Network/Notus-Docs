@@ -1,10 +1,10 @@
 # /block/summary
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Son blok hakkında bilgi verir.
+Returns information about the last block.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

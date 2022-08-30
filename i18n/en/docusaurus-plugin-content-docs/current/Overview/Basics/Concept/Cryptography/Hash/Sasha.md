@@ -1,7 +1,7 @@
 # Sasha
 
 :::note
-Şu anda bu dökümantasyon yapım aşamasındadır. Kelime hataları veya yanlış bilgiler bulundurabilir.
+Currently, this documentation is in the draft stage. It may contain word correct or incorrect information
 :::
 
 Sasha hash metodu iki turdan oluşmaktadır. İçinde Ripemd160, SHA1, MD5 ve Blake2B hash yapılarını kullanmaktadır.

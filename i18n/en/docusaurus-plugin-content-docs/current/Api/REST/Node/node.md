@@ -1,10 +1,10 @@
 # /node
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Tüm tiplerdeki node listesini gösterir.
+Shows the node list of all types.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

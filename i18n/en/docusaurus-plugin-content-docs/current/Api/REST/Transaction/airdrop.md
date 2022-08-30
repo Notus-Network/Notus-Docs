@@ -4,16 +4,16 @@ title: /airdrop/{walletKey}
 
 # /airdrop/{walletKey}
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Cüzdan anahtarının verildiği cüzdana airdrop işlemi yapar
+Airdrops money to the given wallet key.
 
-## Parametreler
+## Parameters
 
 - Wallet Key
-  - 38 haneli bir cüzdan anahtarı.
+  - A 38-character wallet key.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

@@ -1,10 +1,10 @@
 # /block/last
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Son bloğun içeriğini gösterir.
+Displays the contents of the last block.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

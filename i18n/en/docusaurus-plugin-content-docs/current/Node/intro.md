@@ -1,5 +1,5 @@
 # Node Intro
 
 :::note
-Şu anda bu dökümantasyon yapım aşamasındadır. Kelime hataları veya yanlış bilgiler bulundurabilir.
+Currently, this documentation is in the draft stage. It may contain word correct or incorrect information
 :::

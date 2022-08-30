@@ -1,10 +1,10 @@
 # /info/genesis
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Genesis blok bilgisini verir.
+Returns the Genesis block information.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

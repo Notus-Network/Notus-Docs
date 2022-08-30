@@ -1,10 +1,10 @@
 # /metrics/node
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Kaç Node'un var olduğunu gösterir.
+Shows how much node is online right now.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

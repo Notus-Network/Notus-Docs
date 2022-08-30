@@ -1,10 +1,10 @@
 # /master
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Master tipinde Node'ların listesini gösterir.
+Shows the node list of master type.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

@@ -1,10 +1,10 @@
 # /currency/list
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Bütün kullanılabilir para birimlerinigösterir.
+Shows all available currencies.
 
-## Response Gövdesi
+## Response
 
 ```json
 [

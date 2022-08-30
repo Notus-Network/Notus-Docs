@@ -1,10 +1,10 @@
 # /metrics/master
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Kaç Master Node'un var olduğunu gösterir.
+Shows how much master node is online right now, with its list.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

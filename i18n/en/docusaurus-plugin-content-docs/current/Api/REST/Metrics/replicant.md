@@ -1,10 +1,10 @@
 # /metrics/replicant
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Kaç Replicant Node'un var olduğunu gösterir.
+Shows how much replicant node is online right now, with its list.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

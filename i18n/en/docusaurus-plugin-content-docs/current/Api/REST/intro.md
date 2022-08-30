@@ -1,81 +1,79 @@
-# API Referansı
+# API Reference
 
-Her Notus Network Node'u içerisinde REST API bulundurur. Bu şekilde veri paylaşımı ve veri alımı hızlı bir şekilde yapılır.
-Request x-www-form-urlencoded ve JSON formatlarında yapılabilir.
+Each NoVa includes a REST API. In this way, data sharing and data retrieval is done quickly.
+Request can be made in x-www-form-urlencoded and JSON formats.
 
-## Dinlenen Portlar
+## Listened Ports
 
-Farklı portlar ile farklı layerlar ve networkler dinlenir. Bu portların kullanımı aşağıdaki örneklerde görülebilir.
+Different layers and networks are listened by different ports. The use of these ports can be seen in the examples below.
 
-Verilen portlar sadece varsayılan portlardır. Node açılırken bu varsayılan portları değiştirebilirsiniz.
+The ports given are just the default ports. You can change these default ports while the Node is booting.
 
-Varsayılan Port Numarası: 5000
+Default Port Number: 5000
 
 - Layer1
 
-  - Mainnet: `Varsayılan Port + 0`
-  - Testnet: `Varsayılan Port + 1`
-  - Devnet: `Varsayılan Port + 2`
+  - Mainnet: `Default Port Number + 0`
+  - Testnet: `Default Port Number + 1`
+  - Devnet: `Default Port Number + 2`
 
 - Layer2
 
-  - Mainnet: `Varsayılan Port + 100`
-  - Testnet: `Varsayılan Port + 101`
-  - Devnet: `Varsayılan Port + 102`
+  - Mainnet: `Default Port Number + 100`
+  - Testnet: `Default Port Number + 101`
+  - Devnet: `Default Port Number + 102`
 
 - Layer3
 
-  - Mainnet: `Varsayılan Port + 200`
-  - Testnet: `Varsayılan Port + 201`
-  - Devnet: `Varsayılan Port + 202`
+  - Mainnet: `Default Port Number + 200`
+  - Testnet: `Default Port Number + 201`
+  - Devnet: `Default Port Number + 202`
 
 - Layer4
 
-  - Mainnet: `Varsayılan Port + 300`
-  - Testnet: `Varsayılan Port + 301`
-  - Devnet: `Varsayılan Port + 302`
+  - Mainnet: `Default Port Number + 300`
+  - Testnet: `Default Port Number + 301`
+  - Devnet: `Default Port Number + 302`
 
 - Layer5
 
-  - Mainnet: `Varsayılan Port + 400`
-  - Testnet: `Varsayılan Port + 401`
-  - Devnet: `Varsayılan Port + 402`
+  - Mainnet: `Default Port Number + 400`
+  - Testnet: `Default Port Number + 401`
+  - Devnet: `Default Port Number + 402`
 
 - Layer6
 
-  - Mainnet: `Varsayılan Port + 500`
-  - Testnet: `Varsayılan Port + 501`
-  - Devnet: `Varsayılan Port + 502`
+  - Mainnet: `Default Port Number + 500`
+  - Testnet: `Default Port Number + 501`
+  - Devnet: `Default Port Number + 502`
 
 - Layer7
 
-  - Mainnet: `Varsayılan Port + 600`
-  - Testnet: `Varsayılan Port + 601`
-  - Devnet: `Varsayılan Port + 602`
+  - Mainnet: `Default Port Number + 600`
+  - Testnet: `Default Port Number + 601`
+  - Devnet: `Default Port Number + 602`
 
 - Layer8
 
-  - Mainnet: `Varsayılan Port + 700`
-  - Testnet: `Varsayılan Port + 701`
-  - Devnet: `Varsayılan Port + 702`
+  - Mainnet: `Default Port Number + 700`
+  - Testnet: `Default Port Number + 701`
+  - Devnet: `Default Port Number + 702`
 
 - Layer9
 
-  - Mainnet: `Varsayılan Port + 800`
-  - Testnet: `Varsayılan Port + 801`
-  - Devnet: `Varsayılan Port + 802`
+  - Mainnet: `Default Port Number + 800`
+  - Testnet: `Default Port Number + 801`
+  - Devnet: `Default Port Number + 802`
 
 - Layer10
 
-  - Mainnet: `Varsayılan Port + 900`
-  - Testnet: `Varsayılan Port + 901`
-  - Devnet: `Varsayılan Port + 902`
+  - Mainnet: `Default Port Number + 900`
+  - Testnet: `Default Port Number + 901`
+  - Devnet: `Default Port Number + 902`
 
-## Nasıl Get Requesti Kullanılır?
+## Get Request Example
 
-GET tipinde requestler atmak için örnek;
-
-Her objeye uygun JS/TS ve C# kodları.
+The format of a typical HTTP GET request is as follows(in JS/TS/C#).
 
 ### Javascript / Typescript
 
@@ -130,11 +128,9 @@ public static async Task<string> Get(string UrlAddress, int TimeOut = 0, bool Us
 }
 ```
 
-## Nasıl Post Requesti Kullanılır?
+## POST Request Example
 
-POST tipinde requestler atmak için örnek;
-
-Her objeye uygun JS/TS ve C# kodları.
+The format of a typical HTTP GET request is as follows(in JS/TS/C#).
 
 ### Javascript / Typescript
 
@@ -200,67 +196,59 @@ public static async Task<string> Post(string UrlAddress, Dictionary<string, stri
 }
 ```
 
-## Yol Listesi
+## Path List
 
 ---
 
 ### Node
 
-| Tip | Yol                              | Açıklama                                         |
-| :-- | :------------------------------- | :----------------------------------------------- |
-| GET | [/online](Node/online.md)        | Node'un online durumunu gösterir.                |
-| GET | [/node](Node/node.md)            | Tüm tiplerdeki node listesini gösterir.          |
-| GET | [/master](Node/master.md)        | Master tipinde Node'ların listesini gösterir.    |
-| GET | [/main ](Node/main.md)           | Main tipinde Node'ların listesini gösterir.      |
-| GET | [/replicant ](Node/replicant.md) | Replicant tipinde Node'ların listesini gösterir. |
+| Type | Path                             | Description                            |
+| :--- | :------------------------------- | :------------------------------------- |
+| GET  | [/online](Node/online.md)        | Shows the online status of the node.   |
+| GET  | [/node](Node/node.md)            | Shows the node list of all types.      |
+| GET  | [/master](Node/master.md)        | Shows the node list of master type.    |
+| GET  | [/main ](Node/main.md)           | Shows the node list of main type.      |
+| GET  | [/replicant ](Node/replicant.md) | Shows the node list of replicant type. |
 
-### Metrikler
+### Metrics
 
-| Tip | Yol                                        | Açıklama                                     |
-| :-- | :----------------------------------------- | :------------------------------------------- |
-| GET | [/metrics/node](Metrics/node.md)           | Kaç Node'un var olduğunu gösterir.           |
-| GET | [/metrics/master](Metrics/master.md)       | Kaç Master Node'un var olduğunu gösterir.    |
-| GET | [/metrics/main](Metrics/main.md)           | Kaç Main Node'un var olduğunu gösterir.      |
-| GET | [/metrics/replicant](Metrics/replicant.md) | Kaç Replicant Node'un var olduğunu gösterir. |
-| GET | [/metrics/block](Metrics/block.md)         | Kaç tane blok olduğunu gösterir.             |
+| Type | Path                                       | Description                                                       |
+| :--- | :----------------------------------------- | :---------------------------------------------------------------- |
+| GET  | [/metrics/node](Metrics/node.md)           | Shows how much node is online right now.                          |
+| GET  | [/metrics/master](Metrics/master.md)       | Shows how much master node is online right now, with its list.    |
+| GET  | [/metrics/main](Metrics/main.md)           | Shows how much main node is online right now, with its list.      |
+| GET  | [/metrics/replicant](Metrics/replicant.md) | Shows how much replicant node is online right now, with its list. |
+| GET  | [/metrics/block](Metrics/block.md)         | Shows how many blocks are currently on the Blockchain.            |
 
-### Blok Zinciri
+### Blockchain
 
-| Tip | Yol                                          | Parametreler | Açıklama                                              |
-| :-- | :------------------------------------------- | :----------- | :---------------------------------------------------- |
-| GET | [/block/summary](Blockchain/summary.md)      |              | Son blok hakkında bilgi verir.                        |
-| GET | [/block/last](Blockchain/last.md)            |              | Son bloğun içeriğini gösterir.                        |
-| GET | [/block/hash/{uuid}](Blockchain/hash.md)     | Block UUID   | UUID değerinin verildiği blok hash değerini gösterir. |
-| GET | [/block/status/{uuid}](Blockchain/status.md) | Block UUID   | UUID değerinin verildiği bloğun durumunu gösterir.    |
-| GET | [/currency/list](Blockchain/currencylist.md) |              | Bütün kullanılabilir para birimlerini gösterir.       |
-| GET | [/info/genesis](Blockchain/infogenesis.md)   |              | Genesis blok bilgisini verir.                         |
-| GET | [/info/transfer](Blockchain/infotransfer.md) |              | Şu anki işlemlerin ücret bilgisini verir.             |
-| GET | [/info/reserve](Blockchain/inforeserve.md)   |              | Notus Token'nin reserve edilmiş miktarını verir.      |
+| Type | Path                                         | Parameters | Description                                                         |
+| :--- | :------------------------------------------- | :--------- | :------------------------------------------------------------------ |
+| GET  | [/block/summary](Blockchain/summary.md)      |            | Returns information about the last block.                           |
+| GET  | [/block/last](Blockchain/last.md)            |            | Displays the contents of the last block.                            |
+| GET  | [/block/hash/{uuid}](Blockchain/hash.md)     | Block UUID | Indicates the block hash value for which the UUID value is given.   |
+| GET  | [/block/status/{uuid}](Blockchain/status.md) | Block UUID | Indicates the state of the block for which the UUID value is given. |
+| GET  | [/currency/list](Blockchain/currencylist.md) |            | Shows all available currencies.                                     |
+| GET  | [/info/genesis](Blockchain/infogenesis.md)   |            | Returns the Genesis block information.                              |
+| GET  | [/info/transfer](Blockchain/infotransfer.md) |            | It gives the fee information of the current transactions.           |
+| GET  | [/info/reserve](Blockchain/inforeserve.md)   |            | Returns the reserved amount of Notus Token.                         |
 
-### Cüzdan
+### Wallet
 
-| Tip | Yol                                       | Parametreler    | Açıklama                                                      |
-| :-- | :---------------------------------------- | :-------------- | :------------------------------------------------------------ |
-| GET | [/balance/{walletKey}](Wallet/balance.md) | Cüzdan Anahtarı | Cüzdan anahtarının verildiği cüzdanın bakiye bilgisini verir. |
+| Type | Path                                      | Parameters | Description                                                                     |
+| :--- | :---------------------------------------- | :--------- | :------------------------------------------------------------------------------ |
+| GET  | [/balance/{walletKey}](Wallet/balance.md) | Wallet Key | Returns the balance information of the wallet to which the wallet key is given. |
 
-### İşlem
+### Transaction
 
 :::info
 
-Airdrop sadece Testnet ve Devnet için kullanılabilir.
+Airdrop is only available for Testnet and Devnet.
 
 :::
 
-| Tip  | Yol                                                            | Parametreler       | Açıklama                                                   |
-| :--- | :------------------------------------------------------------- | :----------------- | :--------------------------------------------------------- |
-| POST | [/send?data="preTranfer"](Transaction/send.md)                 | preTransfer Yapısı | Transfer işlemini Node'a gönderir.                         |
-| GET  | [/transaction/status/{uuid}](Transaction/transactionstatus.md) | İşlem UUID         | UUID değerinin verildiği işlem durumunu gösterir.          |
-| GET  | [/airdrop/{walletKey}](Transaction/airdrop.md)                 | Cüzdan Anahtarı    | Cüzdan anahtarının verildiği cüzdana airdrop işlemi yapar. |
-
-### NFT
-
-| Tip  | Yol                                                   | Parametreler       | Açıklama                                                   |
-| :--- | :---------------------------------------------------- | :----------------- | :--------------------------------------------------------- |
-| POST | [/storage/file/new?data="fileMetadata"](NFT/new.md)   | fileMetadata       | Yeni bir dosya oluşturmak için gerekli UUID'yi verir.      |
-| POST | [/storage/file/update?data="byteData"](NFT/update.md) | byteData, fileUUID | fileUUID'si verilen dosyanın n 'inci byteArray'ini alır.   |
-| GET  | [/storage/file/status/{uuid}](NFT/status.md)          | Dosya UUID         | UUID değerinin verildiği dosyanın işlem durumunu gösterir. |
+| Tip  | Path                                                           | Parameters            | Description                                                    |
+| :--- | :------------------------------------------------------------- | :-------------------- | :------------------------------------------------------------- |
+| POST | [/send?data="preTranfer"](Transaction/send.md)                 | preTransfer Structure | Transfers to the specified address.                            |
+| GET  | [/transaction/status/{uuid}](Transaction/transactionstatus.md) | Tx UUID               | Indicates the process state for which the UUID value is given. |
+| GET  | [/airdrop/{walletKey}](Transaction/airdrop.md)                 | Wallet Key            | Airdrops money to the given wallet key.                        |

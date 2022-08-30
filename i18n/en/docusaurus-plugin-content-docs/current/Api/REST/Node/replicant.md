@@ -1,10 +1,10 @@
 # /replicant
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Replicant tipinde Node'ların listesini gösterir.
+Shows the node list of replicant type.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

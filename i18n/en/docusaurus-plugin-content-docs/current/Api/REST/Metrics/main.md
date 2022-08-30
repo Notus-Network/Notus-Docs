@@ -1,10 +1,10 @@
 # /metrics/main
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Kaç Main Node'un var olduğunu gösterir.
+Shows how much main node is online right now, with its list.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

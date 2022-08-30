@@ -1,10 +1,10 @@
 # /metrics/block
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Kaç tane blok olduğunu gösterir.
+Shows how many blocks are currently on the Blockchain.
 
-## Response Gövdesi
+## Response
 
 ```json
 {

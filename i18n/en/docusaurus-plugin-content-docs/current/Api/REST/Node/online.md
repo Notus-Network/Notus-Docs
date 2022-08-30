@@ -1,10 +1,10 @@
 # /online
 
-**Request Tipi: GET**
+**Request Type: GET**
 
-Node'un online durumunu gösterir.
+Shows the online status of the node.
 
-## Response Gövdesi
+## Response
 
 ```json
 {
