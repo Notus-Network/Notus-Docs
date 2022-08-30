@@ -145,7 +145,7 @@ The Notus architecture is designed as 3 rings and is ordered from the inside out
 
    It represents the node type that keeps all the block signatures produced in the network but does not create new blocks.
 
-## Miner/Validator Rank (NoVa)
+## Node Queue Consensus
 
 Every node joining the Notus network for transaction verification purposes must have a wallet address. This wallet address primarily determines the account to which the token rewards earned by the validators as a result of their transactions will be transferred. As a secondary use, it determines the order in which validators will operate.
 
@@ -175,14 +175,14 @@ Notus recommends choosing and using the widely used JavaScript programming langu
 
 Blockchain technology outlines are built on smart contracts and coin/token transfers. Programming knowledge is required for the variety of transactions that can be made with smart contracts. As the use of smart contracts increased, the vulnerabilities of the written codes began to increase day by day. Adding block types to the chain that can meet the specific needs thanks to the Mixed Block architecture we developed with Notus Network provides benefits to the developer in terms of creation and to the user in terms of security. The biggest example of State-Based Block Architecture is the token generation structure. With the simple interface added to the architecture for this structure, the necessity of creating a contract to create tokens with "Zero Code" is eliminated.
 
-## Microchain Moduls
+## Microchain
 
 The Notus blockchain architecture has been developed to meet different needs during the design phase. Different sub-micro chains have been added to the platform in order to respond to different changing and shaped needs and to move more dynamically. Micro chains, which give Notus Network a modular structure, can be shaped according to the situation by increasing or decreasing the number of micro chains depending on the operation on the platform together with the network upgrade. The task distribution of these micro chains is considered as the division of different types of transactions (Coin/token transfer, NFT, smart contracts, etc.) in other blockchain platforms into separate micro chains.
 
 For example;
 In other blockchains, the explanation text cannot be written during coin or token transfer. To make up for this shortcoming, the number 4 microchain has been assigned for this process. Thus, the density on the main chain is reduced and additional information is provided in the transactions. Detailed information about micro chains will be given separately.
 
-## Safe NFT
+## Reliable NFT
 
 At Notus, we believe that NFTs are not just visual elements.
 We think that NFTs actually consist of different digital materials such as documents, audio, video and visuals, but their use case is limited. We witness that the biggest problem in all current NFT projects is that digital materials are easily copied and recreated on other platforms with third-party integration solutions.
@@ -262,7 +262,7 @@ The MD5 hash of the generated words is taken one by one.
 Example:
 
 ```
-Inpu = "giggle","injury","bracket","treat","olive","cave","sheriff","kiwi","grow","human","appear","fat","pulse","radar","method","myth"
+Input = "giggle","injury","bracket","treat","olive","cave","sheriff","kiwi","grow","human","appear","fat","pulse","radar","method","myth"
 Output
 -
 719a464002575321cf4e1b985ba98007
@@ -314,8 +314,7 @@ Output
 
 #### Public Key
 
-Public Key is an address created from X and Y points using Private Key. Unlike Bitcoin, Notus Network uses the Prime256v1 algorithm.
-["_Eliptic Curve Cryptography_" (https://en.wikipedia.org/wiki/Elliptic-curve_cryptography)
+Public Key ["_Eliptic Curve Cryptography_"](https://en.wikipedia.org/wiki/Elliptic-curve_cryptography) is an address created from X and Y points using Private Key. Unlike Bitcoin, Notus Network uses the Prime256v1 algorithm.
 
 ```
 Output
