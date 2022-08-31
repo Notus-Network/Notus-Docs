@@ -1,12 +1,12 @@
 # API Reference
 
-Each NoVa includes a REST API. In this way, data sharing and data retrieval is done quickly.
+Each NoVa includes a REST API. In this way, data sharing and data retrieval can be done quickly.
 
 Request can be made in x-www-form-urlencoded and JSON formats.
 
 ## Listened Ports
 
-Different layers and networks are listened by different ports. The use of these ports can be seen in the examples below.
+Different layers and networks are listened to by different ports. The use of these ports can be seen in the examples below.
 
 The ports given are just the default ports. You can change these default ports while the Node is booting.
 

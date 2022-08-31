@@ -4,42 +4,44 @@
 Currently, this documentation is in the draft stage. It may contain word correct or incorrect information
 :::
 
-Sasha hash metodu iki turdan oluşmaktadır. İçinde Ripemd160, SHA1, MD5 ve Blake2B hash yapılarını kullanmaktadır.
-Her iki turda da içinde dört tane toplama işlemi barındırmaktadır.
+The Sasha hash method consists of two rounds.
+
+It uses Ripemd160, SHA1, MD5, and Blake2B hash structures.
+Both rounds contain four additions.
 
 ```js
 function SashaHash(data: string, reverseArray: boolean = true, replaceChar: boolean = true): string
 ```
 
-Referans: [src/core/hash.ts:11](https://github.com/Notus-Network/NotusJS/blob/main/src/core/hash.ts)
+Reference: [src/core/hash.ts:11](https://github.com/Notus-Network/NotusJS/blob/main/src/core/hash.ts)
 
-## Turlara Başlamadan Önce
+## Before Starting Tours
 
-Datanın ters çevrilmesi isteniyorsa, ters çevrilir. Örnek olarak:
+If the data is to be reversed, it is inverted. For example:
 
-`Girdi: NRHf747BCHuFvpzDWpxrXvKm1hNBruM7eNmUH4`
+`Input: NRHf747BCHuFvpzDWpxrXvKm1hNBruM7eNmUH4`
 
-`Çıktı: 4HUmNe7MurBNh1mKvXrxpWDzpvFuHCB747fHRN`
+`Output: 4HUmNe7MurBNh1mKvXrxpWDzpvFuHCB747fHRN`
 
-Blake2B ile yazının hash'i alınır, 16'lık karakterlere bölünerek bir dizi elde edilir.
+With Blake2B, the hash of the text is taken, divided into 16 characters and an array is obtained.
 
 `var Blake2BArray = SplitByLength(Blake2BHash(data), 16);`
 
-MD5 ile yazının hash'i alınır, 4'lük karakterlere bölünerek bir dizi elde edilir.
+With MD5, the text is hashed, divided into 4 characters and an array is obtained.
 
 `var Md5Array = SplitByLength(Md5Hash(data), 4);`
 
-SHA1 ile yazının hash'i alınır, 5'lik karakterlere bölünerek bir dizi elde edilir.
+With SHA1, the hash of the text is taken, divided into 5 characters and an array is obtained.
 
 `var Sha1Array = SplitByLength(Sha1Hash(data), 5);`
 
-Ripemd160 ile yazının hash'i alınır, 5'lik karakterlere bölünerek bir dizi elde edilir.
+With Ripemd160, the hash of the text is taken, divided into 5 characters and an array is obtained.
 
 `var Ripemd160Array = SplitByLength(Ripemd160Hash(data), 5);`
 
-## İlk Tur
+## First Round
 
-İlk turda Blake2B, MD5, SHA1 ve Ripemd160 dizilerinin n'inci elemanı toplanır.
+In the first round, the nth element of the Blake2B, MD5, SHA1 and Ripemd160 arrays is added to a string.
 
 ```js
 for (var i = 0; i < 8; i++) {
@@ -50,9 +52,9 @@ for (var i = 0; i < 8; i++) {
 ...
 ```
 
-## İkinci Tur
+## Second Round
 
-İkinci turda önceki toplanan değerler ters şekilde toplanır. Sıra; Ripemd160, SHA1, MD5 ve Blake2B olur.
+In the second round, the previous values ​​are summed in reverse. In reversed-order; Ripemd160 becomes SHA1, MD5 and Blake2B.
 
 ```js
 else {
@@ -64,7 +66,7 @@ else {
 
 ## Çıktı
 
-Çıktının eğer "_Default Hex Yazısı_" olması isteniyorsa üçüncü parametre true olarak verilir. Bu sayede ReplaceChar fonksiyonu ile belirli karakterlerin değişimi yapılır.
+If the output is "_Default Hex Text_", the third parameter is given as true. In this way, certain characters are replaced with the ReplaceChar function.
 
 ```js
 const DefaultHexAlphabetString = "0123456789abcdef";
@@ -86,7 +88,7 @@ function ReplaceChar(sourceText: string, fromText: string, toText: string) {
 }
 ```
 
-Eğer istenmiyorsa çıktı olduğu gibi geri döndürülür.
+If not requested, the output is returned as it is.
 
 ```js
 return res;

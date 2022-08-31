@@ -1,76 +1,74 @@
 # Notus-GUI
 
 :::note
-Currently, this documentation is in the draft stage. It may contain word correct or incorrect information
+Currently, this documentation is in the draft stage. Therefore, it may contain word correct or incorrect information.
 :::
 
-Notus GUI CNode uygulamasına hiçbir parametre vermeyerek çalıştırırsanız önünüze çıkacak olan bir CLI tabanlı GUI'dır.
+Notus GUI is a CLI-based GUI that will appear when running the CNode application without any parameters.
 
-Node açılımını kolaylaştırmak için yapılmış bu GUI ile seçeceğiniz node tipleri ve portları ile node'unuzu hızlıca açabilirsiniz.
-
-## Seçenekler
+## Menu Options
 
 ---
 
-### Start Node (Node'u Başlat)
+### Start Node
 
-Seçtiğiniz ayarlar ile Node başlatılır.
+Node gets started with the settings selected.
 
-### Node Type (Node Tipi)
+### Node Type
 
-Buradan açacağınız node'un layer tipini seçebilirsiniz.
+You can choose the layer type of the Node you will open.
 
-Şu anda bulunan layer tipleri:
+Currently, there are four-layer types:
 
-- Layer 1 (Kripto Katmanı)
-- Layer 2 (Dosya Katmanı)
-- Layer 3 (Kripto Mesaj Katmanı)
-- Layer 4 (Şifrelenmiş Dosya Katmanı)
+- Layer 1 (Crypto Layer)
+- Layer 2 (File Layer)
+- Layer 3 (Memo Layer)
+- Layer 4 (Encrypted File Layer)
 
-### Change Ports (Portları Değiştir)
+### Change Ports
 
-Buradan açacağınız layerlara bağlı olarak varsayılan port numarasını değiştirebilirsiniz.
+You can change the default port depending on the layers you open.
 
-### Reset Ports (Portları resetle)
+### Reset Ports
 
-Buradan değiştirdiğiniz portları varsayılana geri döndürebilirsiniz.
+From here, you can revert the ports you changed to default.
 
-### Change Wallet Key (Cüzdan Anahtarını Değiştir)
+### Change Wallet Key
 
-Buradan açacağınız node'un ödül alacağı cüzdan adresini seçebilirsiniz.
+You can define a wallet key you created or create a new one.
 
-#### Generate New Key (Yeni Anahtar Oluştur)
+#### Generate New Key
 
-Yeni cüzdan adresi oluşturulur. Oluşturulan yeni cüzdan adresi Node'un ödül alacağı cüzdan adresi olarak tanımlanır.
+It creates a new wallet address and defines the wallet key to the Node.
 
-#### Define Your Key (Anahtarını Belirle)
+#### Define Your Key
 
-Önceden oluşturulmuş olan cüzdan adresi girilir. Girilen cüzdan adresi Node'un ödül alacağı cüzdan adresi olarak tanımlanır.
+From here, you can define a wallet key that you created before
 
-#### Delete Your Key (Anahtarı Sil)
+#### Delete Your Key
 
-Tanımlı olan cüzdan adresini siler.
+Deletes defined wallet key from Node.
 
-### Preferences (Tercihler)
+### Preferences
 
-Node'un tercihlerini buradan seçebilirsiniz.
+You can select Node's preferences here.
 
 #### Debug Mode
 
-Terminale yapılan her işlemi yazdırır.
+You can debug the Node—prints error to the terminal in debug mode.
 
 #### Info Mode
 
-Terminale hata kodlarını ve yapılan işlemleri yazdırır.
+In info mode, it prints everything that Node does.
 
-#### Run Local Mode (Yerel Olarak Aç)
+#### Run Local Mode
 
-Açacağınız node'u yerel olarak açar.
+In local mode, opens Node via available local port via LAN.
 
-#### Only Development Mode (Sadece Geliştirici Mode'u)
+#### Only Development Mode
 
-Node'u Devnet'te açar.
+In development mode, it opens Node in devnet.
 
-### Show My Settings (Ayarlarımı Göster)
+### Show My Settings
 
-Şu ana kadar yaptığınız ayar tercihlerini gösterir.
+It shows the setting preferences you have made so far.
