@@ -1,4 +1,5 @@
 # /new
 
 :::danger
-NFT işlemleri şu anda geliştirme aşamasındadır. Bu yüzden bu işlemi kullanmaya çalışmayınız.
+NFTs are currently in development. Please do not try to use NFT APIs.
+:::

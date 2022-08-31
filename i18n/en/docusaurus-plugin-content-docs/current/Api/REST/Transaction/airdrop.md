@@ -11,7 +11,7 @@ Airdrops money to the given wallet key.
 ## Parameters
 
 - Wallet Key
-  - A 38-character wallet key.
+  - A 39-character wallet key.
 
 ## Response
 
