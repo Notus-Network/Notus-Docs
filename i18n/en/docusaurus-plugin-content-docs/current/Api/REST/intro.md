@@ -74,7 +74,7 @@ Default Port Number: 5000
 
 ## Get Request Example
 
-The format of a typical HTTP GET request is as follows(in JS/TS/C#).
+The format of a typical HTTP GET request is as follows(in JS/TS/C#):
 
 ### Javascript / Typescript
 
@@ -131,7 +131,7 @@ public static async Task<string> Get(string UrlAddress, int TimeOut = 0, bool Us
 
 ## POST Request Example
 
-The format of a typical HTTP GET request is as follows(in JS/TS/C#).
+The format of a typical HTTP GET request is as follows(in JS/TS/C#):
 
 ### Javascript / Typescript
 
