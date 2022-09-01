@@ -77,12 +77,6 @@ const config = {
         },
         {
           type: "doc",
-          docId: "Advanced/Oracle",
-          position: "left",
-          label: "Advanced",
-        },
-        {
-          type: "doc",
           docId: "Migration/index",
           position: "left",
           label: "Migration",
