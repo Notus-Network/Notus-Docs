@@ -198,7 +198,6 @@ const sidebars = {
       ],
     },
   ],
-  advanced: ["Advanced/Oracle"],
   migration: ["Migration/index"],
   node: [
     {
